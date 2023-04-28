@@ -2,7 +2,7 @@ from csv import DictReader
 import random
 
 # open file in read mode
-with open("top50music.csv", 'r') as f:  
+with open("top50music.csv", 'r', encoding="utf-8") as f:  
     dict_reader = DictReader(f)   
     list_of_dict = list(dict_reader)
 
